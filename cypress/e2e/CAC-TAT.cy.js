@@ -151,7 +151,7 @@ it('Selecione um arquivo utilizando uma fixture apara qual foi dada um alias', (
     .and('have.attr', 'target', '_blank')
   })
 
-  it.only('Acessa a pagina de politica de privacidade removendo o target e clicando no link', () => {
+  it('Acessa a pagina de politica de privacidade removendo o target e clicando no link', () => {
     cy.contains('a', 'Política de Privacidade')
     .invoke('removeAttr', 'target')
     .click()
